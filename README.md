@@ -1,6 +1,6 @@
 # study
 
-学习资源集合。个人 Github 目前比较混乱，会逐渐把一些上课学习记录的东西转移到这个仓库里面，并手动同步到个人博客上。目前施工中
+学习资源集合。个人 Github 目前比较混乱，会逐渐把一些上课学习记录的东西转移到这个仓库或者个人博客上。目前施工中
 
 主要分成三个类别
 
@@ -15,6 +15,9 @@
 1. [线性代数](http://ecr23.me/math/linear-algebra/)
 
 ### ✏ 算法
+
+1. [数据结构](http://ecr23.me/algorithm/data_structure_review/)
+2. [算法](http://ecr23.me/algorithm/algorithm_review/)
 
 ### 💻 计算机知识
 
