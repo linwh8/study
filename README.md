@@ -6,7 +6,7 @@
 
 - [✏ 算法](http://ecr23.me/algorithm/)
 - [📚 数学](http://ecr23.me/math/)
-- 计算机知识
+- [💻 计算机知识](https://github.com/ECer23/study/tree/master/computer%20science)
 
 ## Index
 
@@ -16,10 +16,8 @@
 
 ### ✏ 算法
 
-1. [C++ 语法]()
-2. [数据结构]()
-2. [算法]()
-
 ### 💻 计算机知识
+
+1. [操作系统](https://github.com/ECer23/study/blob/master/computer%20science/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 
 
