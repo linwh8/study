@@ -1,31 +1,22 @@
-#include <string>
-#include <vector>
-#include <queue>
-#include <iostream>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
   int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-    int count = 0;
-    if (find(wordList.begin(), wordList.end(), beginWord) != wordList.end()) count += 1;
-
     vector<int> visited;
     visited.resize(wordList.size());
 
-    queue<string> q;
-    q.push(beginWord);
+    queue<pair<string, int>> q;
+    q.push(pair<string, int>(beginWord, 1));
 
     while (!q.empty()) {
-      string word = q.front();
+      auto word_pair = q.front();
+      string word = word_pair.first;
+      int count = word_pair.second;
       q.pop();
-      if (word == endWord) return count - 1;
-      count += 1;
+      if (word == endWord) return count;
       for (int i = 0; i < wordList.size(); i++) {
         if (visited[i] == 0 && diff(word, wordList[i]) == 1) {
           visited[i] = 1;
-          q.push(wordList[i]);
+          q.push(pair<string, int>(wordList[i], count+1));
         }
       }
     }
@@ -42,13 +33,3 @@ private:
     return count;
   }
 };
-
-
-int main() {
-  string beginWord = "hot";
-  string endWord = "dog";
-  vector<string> wordList = {"hot","dot","dog"};
-
-  Solution solution;
-  cout << solution.ladderLength(beginWord, endWord, wordList) << endl;
-}
