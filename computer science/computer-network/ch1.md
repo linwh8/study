@@ -1,7 +1,5 @@
 # Computer Networks and the Internet
 
-这个笔记是参照 Kurose 和 Ross 写著的 *Computer Network, A Top-Down Approach* 6th edition Chapter 1，配合这本书阅读效果更佳~
-
 ## Definition
 
 End systems 由 communication links 和 packet switches 组成
