@@ -25,4 +25,4 @@
 ### 💻 计算机知识
 
 1. [操作系统](https://github.com/ECer23/study/blob/master/computer%20science/operating-system.md)
-2. [计算机网络](https://github.com/ECer23/study/blob/master/computer science/computer-network/index.md)
+2. [计算机网络](https://github.com/ECer23/study/blob/master/computer%20science/computer-network/index.md)
