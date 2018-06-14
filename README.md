@@ -14,8 +14,7 @@
 
 1. [线性代数入门](http://ecr23.me/math/linear-algebra/) 对线性代数基础知识的总结
 2. [数值线性代数](https://github.com/ECer23/study/blob/master/math/numerical-linear-algebra.md) 阅读 Trefehen 和 Bau. 的著作 *Numercial Linear Algebra* 做的笔记，以 lecture 为单位。
-3. [概率]() 对概率统计知识的总结
-4. [统计]() 对统计知识的总结
+3. [概率统计](http://ecr23.me/math/probability-and-statistics/) 对概率统计知识的总结
 
 ### ✏ 算法
 
