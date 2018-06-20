@@ -9,40 +9,43 @@ class Solution {
  public:
   int findCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst,
                         int K) {
-    int cur_dist[101] = {};
-    set<int> min_nodes, nodes;
-    for (int i = 0; i < n; i++) {
-      nodes.insert(i);
-      cur_dist[i] = 99999;
-    }
+    vector<vector<int>> cur_dist(n, vector<int>(n, 99999));
+    vector<int> nodes(n, -1);  // -1 for find routes
 
     int start = src;
-    cur_dist[start] = 0;
-    K++;
+    cur_dist[start][0] = 0;
 
-    while (!nodes.empty() && K != 0) {
-      min_nodes.insert(start);
-      nodes.erase(start);
+    while (!nodes.empty()) {
+      nodes[start] = 1;
+      int max_dist = 0;
+      int min_node = -1;
 
       for (int i = 0; i < flights.size(); i++) {
         int from = flights[i][0];
         int to = flights[i][1];
         int dist = flights[i][2];
 
-        if (from == start) { // update graph
-          cur_dist[to] = min(dist + cur_dist[start], cur_dist[to]);
-          if (to == dst) K--;
+        if (from == start) {  // update graph
+          for (int i = 0; i < n; i++) {
+            cur_dist[to][i+1] = min(dist + cur_dist[start][i], cur_dist[to][i+1]);
+            if (max_dist < cur_dist[to][i+1]) {
+              min_node = to;
+              max_dist = cur_dist[to][i+1];
+            }
+          }
         }
       }
 
-      start = *(nodes.begin());
-      for (auto i = nodes.begin(); i != nodes.end(); i++) {
-        if (cur_dist[start] > cur_dist[*i]) start = *i;
-      }
+      start = min_node;
     }
 
-    if (cur_dist[dst] == 99999) return -1;
-    else return cur_dist[dst];
+    int ans;
+    for (int i = 0; i < K; i++) {
+      if (cur_dist[dst][i] < ans)
+        ans = cur_dist[dst][i];
+    }
+
+    return ans;
   }
 };
 
