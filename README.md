@@ -2,11 +2,12 @@
 
 学习资源集合。个人 Github 目前比较混乱，会逐渐把一些上课学习记录的东西转移到这个仓库或者个人博客上。目前施工中
 
-主要分成三个类别
+主要分成以下类别
 
 - [✏ 算法](http://ecr23.me/algorithm/)
 - [📚 数学](http://ecr23.me/math/)
 - [💻 计算机知识](https://github.com/ECer23/study/tree/master/computer%20science)
+- [🤖 机器学习](http://github.com/ECer23/study/tree/master/machine%20learning)
 
 ## Index
 
@@ -25,3 +26,5 @@
 
 1. [操作系统](https://github.com/ECer23/study/blob/master/computer%20science/operating-system.md)
 2. [计算机网络](https://github.com/ECer23/study/blob/master/computer%20science/computer-network/index.md)
+
+### 🤖 机器学习
