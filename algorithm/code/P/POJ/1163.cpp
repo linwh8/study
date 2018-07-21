@@ -1,10 +1,3 @@
-/*
- * Triangle.cpp
- * Author: Ecr23
- * Source: POJ_1163
- * 2016-09-20
- */
-
 #include <stdio.h>
 #include <algorithm>
 #include <iostream>
