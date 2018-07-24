@@ -17,3 +17,8 @@
 4. [Lecture 4. Singluar Value Decomposition](http://ecr23.me/math/svd/)
     > 🔎 奇异值分解
     > 📚 特征值，特征值分解
+
+## Part II: QR Factorization and Least Squares
+
+1. [Lecture 5. Projections](http://ecr23.me/math/projections/)
+    > 🔎 投影的解释
